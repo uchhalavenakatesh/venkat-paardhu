@@ -1,0 +1,22 @@
+<html>
+    <h1 style="color: fuchsia;"><center>VENKATESH UCHHALA PHOTOS</center></h1>
+    <p style="color: greenyellow;"> venkatesh</p>
+    <p style="color: indigo;"> venkt</p>
+    <p style="color: lime;">venky</p>
+    <button onclick="showContent()">click here</button>
+    <template>
+        <h2>venkatesh</h2>
+        <img src="v1.jpeg" width="70%" height="100%">
+      </template>
+      <p>yes it is very perfect manner in this world</p>
+      <p> ok iam fine</p>
+      
+      <script>
+      function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+      }
+      </script>
+      
+</html>
